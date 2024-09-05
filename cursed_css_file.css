@@ -183,7 +183,7 @@ header h6,
 .App .rm-Header-bottom-link.Button:focus,
 .App .rm-Header-bottom-link.Button:active,
 .App .rm-Header-bottom-link.Button.active {
-  box-shadow: none !important !important;
+  box-shadow: none !important;
 }
 
 .App [class*="Header-left"],
