@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/fonts/Lufga-Regular.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/fonts/Lufga-Medium.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Lufga";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/fonts/Lufga-SemiBold.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+body {
+  --font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --header-logo-height: 40px;
+  --graphite: #1d1d1d;
+  --light-purple: #f4f7fc;
+  --pay-aqua: #6ad1f2;
+  --lightGray: var(--light-purple);
+  --color-link-background: var(--light-purple);
+  --border-radius: 10px;
+  color: var(--graphite);
+}
+
+body .ThemeContext_line .rm-Header {
+  --Header-border-color: #ededed;
+  --Header-button-hover: white;
+  --Header-border-width: 1px;
+}
+
+.markdown-body {
+  --markdown-title-font: Lufga, Inter;
+  --markdown-font-size: 16px;
+  --markdown-line-height: 1.8;
+  --table-head: transparent;
+  --table-stripe: transparent;
+  --table-edges: #ededed;
+}
+
+.App .markdown-body .rdmd-table table {
+  border: none;
+}
+
+.App .markdown-body table th {
+  font-family: var(--markdown-title-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.App .markdown-body table td,
+.App .markdown-body table th {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 15px;
+}
+
+.App .markdown-body table tbody tr {
+  font-size: 15px;
+  line-height: 140%;
+  transition: background-color 150ms ease-in-out;
+}
+
+.App .markdown-body table tbody tr:hover {
+  background-color: var(--color-link-background) !important;
+}
+
+.markdown-body a[href],
+.markdown-body a:not([href=""]) {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+body .App .rm-Guides,
+body .App .rm-ReferenceMain,
+body .App .rm-Changelog {
+  --markdown-title-font: Lufga, Inter;
+}
+
+body .App .rm-Guides header h1,
+body .App .rm-ReferenceMain header h1,
+body .App .rm-Changelog header h1,
+body .App .field-description h1,
+body .App .markdown-body h1 {
+  font-family: Lufga, Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+#content [class*="TutorialHero-Col-Title"],
+.heading.heading .heading-text {
+  font-family: var(--markdown-title-font);
+  font-weight: 400;
+  color: var(--graphite);
+}
+
+#ssr-main header [class*="LandingPageHeader-title"] {
+  font-family: var(--markdown-title-font) !important;
+  color: var(--graphite) !important;
+  font-size: 52px !important;
+  font-weight: 400 !important;
+  line-height: 62.4px !important;
+  margin-bottom: 20px !important;
+}
+
+.App .rm-Guides #content-head h1,
+.App .rm-ReferenceMain #content-head h1,
+.App .rm-Changelog #content-head h1 {
+  font-family: Lufga, Inter;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.App .rm-Header-bottom-link {
+  position: relative;
+  font-family: Lufga, Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 39px 25px;
+  border: none;
+  border-radius: 0;
+}
+
+.App .rm-Header-bottom-link:after {
+  position: absolute;
+  display: block;
+  content: "";
+
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+
+  background-color: var(--color-primary);
+
+  transition: width 250ms ease-in-out;
+}
+
+.App .rm-Header-bottom-link:hover:after,
+.App .rm-Header-bottom-link:focus:after,
+.App .rm-Header-bottom-link:active:after,
+.App .rm-Header-bottom-link.active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.App .rm-Header-bottom-link.Button:hover,
+.App .rm-Header-bottom-link.Button:focus,
+.App .rm-Header-bottom-link.Button:active,
+.App .rm-Header-bottom-link.Button.active {
+  box-shadow: none !important;
+}
+
+.App [class*="Header-left"],
+.App [class*="Header-right"] {
+  padding-top: 0;
+  padding-bottom: 1px;
+}
+
+.rm-LandingPageHeader .Button,
+#content .Button {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rm-LandingPageHeader .Button,
+#content .Button_md {
+  padding: 25px;
+}
+
+.rm-LandingPageHeader {
+  text-align: center;
+}
+
+.rm-LandingPageHeader .Button,
+#content .Button_lg {
+  padding: 30px;
+}
+
+.rm-LandingPageHeader [tag="div"] {
+  justify-content: center !important;
+}
+
+#content .Button_blue,
+.Button[class*="TutorialHero-Col-Button"],
+.Button[class*="LandingPageHeader-button_secondary"] {
+  color: #fff;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  transition: background-color 250ms ease;
+}
+
+#content .Button:hover,
+#content .Button_blue:hover,
+.Button[class*="TutorialHero-Col-Button"]:hover,
+.Button[class*="LandingPageHeader-button_secondary"]:hover {
+  background-color: #343bd7;
+}
+
+.Button[class*="LandingPageHeader-button_secondary"] {
+  background-color: var(--white);
+  color: currentColor;
+}
+
+.Button[class*="LandingPageHeader-button_secondary"]:hover {
+  color: var(--white);
+}
+
+#content [class*="TutorialCard-Status_featured"] {
+  background-color: var(--pay-aqua);
+  color: var(--white);
+}
+
+#content [class*="DiscussList-sidebar_box"] {
+  background-color: var(--light-purple);
+}
+
+.App [class*="Box_rule"],
+.App [class*="Box_pop"],
+.App [class*="Box_card"] {
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.App .reference-redesign .rm-Sidebar-link:hover,
+.App .reference-redesign .rm-Sidebar-link:focus {
+  background: var(--light-purple);
+}
+
+.App .callout.callout {
+  border-left: none;
+  border-radius: 0px 20px 20px 20px;
+  padding: 23px 30px;
+}
+
+.App .callout.callout .callout-heading {
+  font-family: var(--markdown-title-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.App .callout.callout .callout-icon {
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+.App .callout.callout > * {
+  margin-left: 0;
+}
+
+.App .callout.callout_info {
+  --background: #e0f8ff;
+  --title: var(--graphite);
+  --border: transparent;
+}
+
+.App .callout.callout_info .callout-icon {
+  background-image: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/developer-pay-icons/carbon_information.svg);
+}
+
+.App .callout.callout_warn {
+  --background: #dedfff;
+  --title: var(--graphite);
+  --border: transparent;
+}
+
+.App .callout.callout_warn .callout-icon {
+  background-image: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/developer-pay-icons/carbon_tool-kit.svg);
+}
+
+.App .callout.callout_error {
+  --background: #ffd0de;
+  --title: var(--graphite);
+  --border: transparent;
+}
+
+.App .callout.callout_error .callout-icon {
+  background-image: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/developer-pay-icons/carbon_warning-alt.svg);
+}
+
+.App .callout.callout_okay {
+  --background: #dcf0d5;
+  --title: var(--graphite);
+  --border: transparent;
+}
+
+.App .callout.callout_okay .callout-icon {
+  background-image: url(https://25758250.fs1.hubspotusercontent-eu1.net/hubfs/25758250/developer-pay-icons/carbon_thumbs-up.svg);
+}
+img[alt="payment-icon"] {
+  width: 25px;
+  height: 25px;
+}
